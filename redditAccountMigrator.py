@@ -1,16 +1,21 @@
 #!/usr/bin/python
+import praw
+import OAuth2Util
+import json
+import sys
 
-import praw, sys, OAuth2Util, json
+"""
+
+This uses OAuth to log in. Please follow the steps here to initially set up the app 
+and config files. You will need two: olduserconfigfile.txt and newuserconfigfile.txt.
+
+OAUth2Util.py by /u/SmBe19 (https://github.com/SmBe19/praw-OAuth2Util)
+
+"""
 
 def main(): 
     r = praw.Reddit(user_agent='RedditAccountMigrator v0.1 by /u/AchillesDev')
     
-    
-    #if use_cli:
-    #    accounts = get_input()
-    # else: 
-
-    #log_in_to_reddit(accounts[0], accounts[1])
     # Check if token already exists
     r.config.store_json_result = True
     print("Ensure you are logged in with your original account\n")
