@@ -6,3 +6,5 @@ This is mainly up to have a backup, if you intend to use this as a standalone sc
 * Handle config filenames more elegantly
 * Make a verbose option to read out subreddits subscribing and unsibscribing to
 * Make prettier
+* Make a debug option for writing subreddits to logfile
+* More efficient sub/unsub procedures
